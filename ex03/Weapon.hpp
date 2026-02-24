@@ -10,3 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
+#include <iostream>
+using namespace std;
+
+class Weapon
+{
+    private:
+        string type;
+        
+    public:
+        Weapon(string type);
+        const string& getType();
+        void setType(string type);
+
+};

@@ -10,3 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
+#include "Weapon.hpp"
+
+class HumanB
+{
+    private:
+        Weapon& weapon;
+        string name;
+
+    public:
+        void attack();
+        
+
+};

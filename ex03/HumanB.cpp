@@ -10,3 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "HumanB.hpp"
+
+void HumanB::attack()
+{
+    cout << get_name() << " attacks with their " << get_weapon << endl;
+}
+

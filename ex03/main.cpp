@@ -10,3 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "HumanA.hpp"
+#include "HumanB.hpp"
+
+int main()
+{
+    Weapon sword("sword");
+    Weapon gun("gun");
+    HumanA Bob("Bob", sword);
+    HumanB Fanta("Fanta", gun);
+
+    Bob.attack();
+    Fanta.attack();
+
+    return 0;
+}
