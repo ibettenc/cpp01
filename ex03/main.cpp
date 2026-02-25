@@ -15,13 +15,23 @@
 
 int main()
 {
-    Weapon sword("sword");
-    Weapon gun("gun");
-    HumanA Bob("Bob", sword);
-    HumanB Fanta("Fanta", gun);
+    {
+        Weapon club = Weapon("crude spiked club");
 
-    Bob.attack();
-    Fanta.attack();
+        HumanA bob("Bob", club);
+        bob.attack();
+        club.setType("some other type club");
+        bob.attack();
+    }
+    {
+        Weapon club = Weapon("crude spiked club");
 
+        HumanB fanta("Fanta");
+        fanta.setWeapon(club);
+        fanta.attack();
+        club.setType("some other type of club");
+        fanta.attack();
+    }
     return 0;
 }
+

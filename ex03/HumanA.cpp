@@ -12,7 +12,7 @@
 
 #include "HumanA.hpp"
 
-HumanA::HumanA(string n, Weapon& w) : name (n), weapon(w)
+HumanA::HumanA(string n, Weapon& w) : name(n), weapon(w)
 {
 }
 

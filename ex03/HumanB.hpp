@@ -16,11 +16,11 @@
 class HumanB
 {
     private:
-        Weapon& weapon;
+        Weapon* weapon;
         string name;
 
     public:
         void attack();
-        
-
+        HumanB(string name);
+        void setWeapon(Weapon& w);
 };

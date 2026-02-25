@@ -13,7 +13,7 @@
 ###################################################
 ## ARGUMENTS
 
-NAME = unnecessary_violence
+NAME = sed_is_for_losers
 
 CC = c++
 
@@ -23,7 +23,7 @@ CFLAGS = -Wall -Werror -Wextra -std=c++98
 ###################################################
 ## SOURCES
 
-SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

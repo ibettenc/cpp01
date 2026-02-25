@@ -12,8 +12,18 @@
 
 #include "HumanB.hpp"
 
+HumanB::HumanB(string n) : name(n)
+{
+}
+
+void HumanB::setWeapon(Weapon& w)
+{
+    weapon = &w;
+}
+
+
 void HumanB::attack()
 {
-    cout << get_name() << " attacks with their " << get_weapon << endl;
+    cout << name << " attacks with their " << weapon->getType() << endl;
 }
 
