@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.cpp                                         :+:      :+:    :+:   */
+/*   Harl_2.0.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivan <ivan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/21 16:50:45 by ibettenc          #+#    #+#             */
-/*   Updated: 2026/05/24 16:34:16 by ivan             ###   ########.fr       */
+/*   Created: 2026/05/24 17:22:58 by ivan              #+#    #+#             */
+/*   Updated: 2026/05/25 16:19:21 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanB.hpp"
+#pragma once
+#include <iostream>
+#include <string>
 
-HumanB::HumanB(string n) : weapon(NULL), name(n)
+#using namespace std;
+
+std;
+
+class Harl
 {
+    private :
+        void debug();
+        void info();
+        void warning();
+        void error();
+        
+    public :
+        void complain(string level);
 }
-
-void HumanB::setWeapon(Weapon& w)
-{
-    weapon = &w;
-}
-
-void HumanB::attack()
-{
-    if (!weapon)
-    {
-        cout << name << " has no weapon to attack with.." << endl;
-        return;
-    }
-    cout << name << " attacks with their " << weapon->getType() << endl;
-}
-

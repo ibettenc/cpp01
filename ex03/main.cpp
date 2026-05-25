@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibettenc <ibettenc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ivan <ivan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/21 16:50:42 by ibettenc          #+#    #+#             */
-/*   Updated: 2026/02/21 16:50:43 by ibettenc         ###   ########.fr       */
+/*   Updated: 2026/05/24 16:33:51 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int main()
         Weapon club = Weapon("crude spiked club");
 
         HumanB fanta("Fanta");
+        fanta.attack();
         fanta.setWeapon(club);
         fanta.attack();
         club.setType("some other type of club");
@@ -34,4 +35,3 @@ int main()
     }
     return 0;
 }
-

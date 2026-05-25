@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ibettenc <ibettenc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ivan <ivan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/21 16:37:57 by ibettenc          #+#    #+#             */
-/*   Updated: 2026/02/21 16:47:35 by ibettenc         ###   ########.fr       */
+/*   Updated: 2026/05/16 13:49:59 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,14 @@ int main()
     string *stringPTR = &s;
     string &stringREF = s;
 
+    // je print leur adresse
     cout << &s << endl;
     cout << stringPTR << endl;
     cout << &stringREF << endl;
 
     cout << endl;
 
+    // je print ce que leur adresse contient
     cout << s << endl;
     cout << *stringPTR << endl;
     cout << stringREF << endl;
