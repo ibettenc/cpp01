@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Harl_2.0.hpp                                       :+:      :+:    :+:   */
+/*   Harl.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivan <ivan@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ibettenc <ibettenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/24 17:22:58 by ivan              #+#    #+#             */
-/*   Updated: 2026/05/25 16:19:21 by ivan             ###   ########.fr       */
+/*   Updated: 2026/05/26 16:45:09 by ibettenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 #include <iostream>
 #include <string>
 
-#using namespace std;
-
-std;
+using namespace std;
 
 class Harl
 {
@@ -28,4 +26,4 @@ class Harl
         
     public :
         void complain(string level);
-}
+};
